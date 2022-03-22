@@ -5,7 +5,7 @@ import { Dialog } from "@headlessui/react";
 
 
 const Modal = () => {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   return (
     <Dialog
