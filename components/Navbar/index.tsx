@@ -2,13 +2,13 @@ import Button from "../Button";
 
 export default function Navbar() {
   return (
-    <nav className="w-100 px-4 py-2 backdrop-filter backdrop-blur">
+    <nav className="w-100 px-4 py-2 relative z-10">
       <div className="container flex items-center justify-between">
         <div className="logo flex items-center text-white text-sm">
-          <img src="/logo.png" alt="Shinder" className="w-24 h-24" />
-          <h1 className="md:block hidden">Shivaji Tinder - Tinder for Shivaji Students!</h1>
+          <img src="/logo.svg" alt="Shinder" className="w-12 h-12" />
+          <h1 className="ml-3">Shivaji Dates</h1>
         </div>
-        <Button text="Login" />
+        <Button text="Login" variant="secondary" className="px-4 py-2" />
       </div>
     </nav>
   );
