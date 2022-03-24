@@ -35,9 +35,9 @@ const Modal = ({ isOpen, setIsOpen, children }: Props) => {
           className="modal-backdrop h-screen w-screen bg-[#000000c5] backdrop-blur fixed top-0 bottom-0 left-0 right-0  z-[30] flex items-center justify-center shadow-xl"
         >
           <motion.div
-            initial={{ scale: 0 }}
+            initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
+            exit={{ scale: 0.5 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="modal-content bg-white rounded-md py-4 md:px-12 px-8 w-[90%] md:w-1/3"
           >
