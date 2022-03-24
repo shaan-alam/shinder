@@ -20,14 +20,14 @@ const SignInModal = ({ isOpen, setIsOpen }: Props) => {
               <input
                 type="email"
                 placeholder="Email"
-                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-300 w-full"
+                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-200 w-full"
               />
             </div>
             <div className="form-control my-4">
               <input
                 type="text"
                 placeholder="Password"
-                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-300 w-full"
+                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-200 w-full"
               />
             </div>
             <Button

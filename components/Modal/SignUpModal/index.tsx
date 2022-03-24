@@ -20,28 +20,28 @@ const SignUpModal = ({ isOpen, setIsOpen }: Props) => {
               <input
                 type="email"
                 placeholder="Email"
-                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-300 w-full"
+                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-200 w-full"
               />
             </div>
             <div className="form-control my-4">
               <input
                 type="text"
                 placeholder="Full Name"
-                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-300 w-full"
+                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-200 w-full"
               />
             </div>
             <div className="form-control my-4">
               <input
                 type="text"
                 placeholder="Password"
-                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-300 w-full"
+                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-200 w-full"
               />
             </div>
             <div className="form-control my-4">
               <input
                 type="text"
                 placeholder="Confirm Password"
-                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-300 w-full"
+                className="focus:border transition-all focus:border-primary outline-none py-2 px-4 rounded-md bg-gray-200 w-full"
               />
             </div>
             <Button text="Submit" variant="primary" className="w-full my-5 px-4 py-2" />
