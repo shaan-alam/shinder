@@ -1,10 +1,24 @@
-interface Props {
+import React from "react";
+
+interface Props
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   text: string;
+  className?: string;
+  variant?: "primary" | "secondary";
 }
 
-const Button = ({ text }: Props) => {
+const Button = ({ text, className, variant, onClick }: Props) => {
+  const variants = {
+    secondary: "bg-white rounded-md text-pink-500 cursor-pointer font-bold",
+    primary:
+      "text-white rounded-full bg-gradient-to-r from-pink-500 to-primary transition-all hover:from-primary hover:to-pink-500",
+  };
+
   return (
-    <button className="bg-white px-4 py-2 rounded-md text-pink-500 cursor-pointer font-bold">
+    <button className={`${variants[variant]} ${className} `} onClick={onClick}>
       {text}
     </button>
   );
