@@ -1,17 +1,17 @@
 // import { GoogleLogin } from 'react-google-login';
 import Button from "../../Button";
-import Modal from "../";
+import Modal from "..";
 
 interface Props {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const AuthModal = ({ isOpen, setIsOpen }: Props) => {
+const SignUpModal = ({ isOpen, setIsOpen }: Props) => {
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
       <div>
-        <h1 className="text-primary text-xl font-bold my-4 text-center">
+        <h1 className="text-primary text-3xl font-bold my-4 text-center">
           Get Started
         </h1>
         <div className="auth-area">
@@ -58,4 +58,4 @@ const AuthModal = ({ isOpen, setIsOpen }: Props) => {
   );
 };
 
-export default AuthModal;
+export default SignUpModal;

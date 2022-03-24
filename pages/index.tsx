@@ -6,7 +6,7 @@ import { AuthModal } from "../components";
 import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  const [loginModal, setLoginModal] = useState<boolean>(false);
+  const [signUpModal, setSignUpModal] = useState<boolean>(false);
 
   return (
     <section className={styles.main}>
@@ -23,13 +23,13 @@ export default function Home() {
           variant="primary"
           className="transition-all hover:scale-105 py-6 px-14 my-8"
           text="Create an Account"
-          onClick={() => setLoginModal(true)}
+          onClick={() => setSignUpModal(true)}
         />
       </div>
 
       <AnimatePresence>
-        {loginModal && (
-          <AuthModal isOpen={loginModal} setIsOpen={setLoginModal} />
+        {signUpModal && (
+          <AuthModal isOpen={signUpModal} setIsOpen={setSignUpModal} />
         )}
       </AnimatePresence>
     </section>
